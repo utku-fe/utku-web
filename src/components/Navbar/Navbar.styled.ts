@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
+
 export const NavbarContainer = styled("nav")`
   display: flex;
   flex-direction: row;
@@ -33,6 +34,8 @@ export const StyledFlagContainer = styled(Box)(({ theme }) => ({
 }));
 
 export const StyledNavLink = styled(Link)(({ theme }) => ({
+  fontFamily: "Roboto Mono",
+  fontWeight: "400",
   textDecoration: "none",
   color: "blue",
 }));
