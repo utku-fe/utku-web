@@ -17,7 +17,7 @@ export const StyledNavbar = styled("ul")(({ theme }) => ({
   gap: "1rem",
   listStyle: "none",
 
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     gap: "0",
   },
@@ -27,7 +27,7 @@ export const StyledFlagContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "row",
   gap: "0.5rem",
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     gap: "0",
   },
@@ -37,5 +37,10 @@ export const StyledNavLink = styled(Link)(({ theme }) => ({
   fontFamily: "Roboto Mono",
   fontWeight: "400",
   textDecoration: "none",
-  color: "blue",
+  color: "black",
+
+  "&:hover": {
+    color: "gray",
+    textDecoration: "underline",
+  },
 }));
