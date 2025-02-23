@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Link } from "react-router-dom";
+
 import {
   NavbarContainer,
   StyledFlagContainer,
@@ -21,9 +21,6 @@ const Navbar: FC = () => {
         </li>
         <li>
           <StyledNavLink to="/writings">{t(`writings`)}</StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink to="/contact">{t(`contact`)}</StyledNavLink>
         </li>
       </StyledNavbar>
       <StyledFlagContainer>
